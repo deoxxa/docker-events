@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/deoxxa/docker-events/issues"
   },
-  "homepage": "https://github.com/deoxxa/docker-events"
+  "homepage": "https://github.com/deoxxa/docker-events",
+  "dependencies": {
+    "jsuck": "0.0.4"
+  }
 }
