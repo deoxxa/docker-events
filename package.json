@@ -21,5 +21,8 @@
   "homepage": "https://github.com/deoxxa/docker-events",
   "dependencies": {
     "jsuck": "0.0.4"
+  },
+  "peerDependencies": {
+    "dockerode": "^1.2.9"
   }
 }
