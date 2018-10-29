@@ -29,6 +29,10 @@ DockerEvents.prototype.start = function start() {
 
     res.pipe(parser);
 
+    parser.on("error", function(error) {
+      self.emit("error", error.message ? error.message : error);
+    });
+
     parser.on("data", function(data) {
       self.emit("_message", data);
       self.emit(data.status, data);
